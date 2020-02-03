@@ -17,7 +17,7 @@ app.use(cors());
 app.use(helemt());
 app.use(validateBearerToken);
 
-app.use('/api/bookmarks', bookmarkRouter);
+app.use(bookmarkRouter);
 
 app.get('/', (req, res) => {
   res.send('Hello, world out there!');

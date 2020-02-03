@@ -114,7 +114,7 @@ describe('Bookmarks Endpoints', () => {
           .get(`/api/bookmarks/${bookmarkId}`)
           .set('Authorization', `Bearer ${process.env.API_TOKEN}`)
           .expect(404, { 
-            error: { message: 'Bookmark not found'}
+            error: { message: 'Bookmark Not Found'}
           });
       });
     });
